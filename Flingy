@@ -1,0 +1,26 @@
+if game.PlaceId == 15654981113 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "~|💧Fling Hub💧|~", HidePremium = false, IntroText = "💧Fling Hub💧", SaveConfig = true, ConfigFolder = "FlingConfig"})
+local FarmTab = Window:MakeTab({
+	Name = "💧Fling Script💧",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+ 
+FarmTab:AddButton({
+	Name = "💧Fling Script💧",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/D5v5dzzz/Fling/refs/heads/main/Fling"))()
+  	end    
+})
+ 
+
+
+
+ 
+ 
+
+
+ 
+end
+OrionLib:Init()
